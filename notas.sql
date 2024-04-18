@@ -1,0 +1,10 @@
+CREATE DATABASE Notas;
+USE Notas;
+
+
+CREATE TABLE Notas (
+	idNotas INT(11) NOT NULL AUTO_INCREMENT,
+	data VARCHAR(45) NOT NULL,
+	anotacao VARCHAR(150),
+	PRIMARY KEY(idNotas)
+);
