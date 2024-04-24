@@ -1,0 +1,27 @@
+select * from endereco;
+use alunos;
+insert into endereco(logradouro, bairro, cidade, complemento) values
+("Rua Antonio bittencourt da costa", "Santa Luzia", "Aparecida", "proximo ao cemiterio novo");
+
+select * from aluno;
+insert into aluno ( nome, email, whatsapp, numero_casa, fk_idendereco) values
+( "Anderson M", "anderson.tecnicoprogramador@hotmail.com", "16993756603", "517", 16);
+
+
+===================================================================
+use usuario_endereco_telefone;
+
+select * from telefone;
+
+INSERT INTO telefone (numero, operadora, ddd, fk_idPessoa) values ('93756603', 'claro', '16', '9');
+
+select * from pessoa;
+
+INSERT INTO pessoa (cpf, nome, data_nascimento, sexo, numero_casa, fk_idEndereco) values ('51919085800', 'Anderson', '1982-07-10', 'm','90', '7');
+
+select * from endereco;
+
+INSERT INTO endereco (logradouro, bairro, cep, cidade, estado) values ('Rua: Antonio Bittencourt da Costa', 'Santa luzia', '12570-318', 'Aparecida','SP');
+
+
+DELETE FROM pessoa WHERE idPessoa = 8;
