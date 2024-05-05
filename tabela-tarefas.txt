@@ -1,0 +1,34 @@
+create database tarefas;
+
+use tarefas;
+
+create table tarefas(
+idtarefas INT AUTO_INCREMENT PRIMARY KEY,
+data DATE,
+nome VARCHAR(255),
+descricao TEXT,
+status ENUM('pendente' , 'em_progresso' , 'concluida')
+);
+INSERT INTO tarefas (data, nome, descricao, status) VALUES ('2024-05-02', 'Fazer compras', 'Comprar itens essesnciais para casa', 'pendente');
+
+SELECT * FROM tarefas;
+
+UPDATE tarefas SET status = 'concluida' WHERE idtarefas = 1;
+
+DELETE FROM tarefas WHERE idtarefas = 1;
+
+
+select * from tarefas;
+use tarefas;
+
+
+
+INSERT INTO tarefas (data, nome, descricao, status) VALUES ('2024-05-02', 'Fazer compras', 'Comprar itens essesnciais para casa', 'pendente');
+
+
+
+SELECT * FROM tarefas;
+
+UPDATE tarefas SET status = 'concluida' WHERE idtarefas = 1;
+
+DELETE FROM tarefas WHERE idtarefas = 1;
